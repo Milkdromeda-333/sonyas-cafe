@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-color: mintcream;
   color: dimgrey;
@@ -7,7 +11,7 @@ body {
 }
 
 .container {
-  margin: 612px 25px  0px 25px;
+  margin: 0px;
   
 }
 
@@ -28,24 +32,27 @@ nav li {
   padding-right: 20px;
   height: 30px;
   display: inline-block;
+  
 }
 
 nav a {
   text-decoration: none;
   font-size: 25px;
-  color: mintcream;
+  color: yellowgreen;
+  
 }
 
 nav a:hover {
-  color: yellowgreen;
+  color: dimgrey;
   text-decoration: underline;
   text-shadow: 1px 1px 10px black;
-
+  color: yellowgreen;
+  border-right-style: solid 1px yellowgreen;
 }
 nav ul {
   margin: 0;
 }
-/*--HEADER--*/
+/*----HEADER--*/
 
 .header {
   background-image: url("https://images.unsplash.com/photo-1600093463592-8e36ae95ef56?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80");
@@ -57,47 +64,143 @@ nav ul {
   color: mintcream;
   font-size: 250px;
   text-align: center;
-  position: absolute;
-  top: 40px;
+ 
 }
 
-header p {
-  position: relative;
-  top: -200px;
+header span {
+ 
   text-shadow: 1px 1px 10px black;
   font-family: 'Caveat', cursive;
   color: hsl(150, 100%, 95%);
+  margin: 0px;
 }
 
 header button {
-  position: absolute;
-  top: -230px;
-  left: 540px;
-  background-color: rgba(245, 255, 250, 0.9);
-  width: 150px;
-  height: 50px;
+  text-align: center;
+  background-color: rgba(105, 105, 105, 0.9);
+  width: 250px;
+  height: 80px;
   border: none;
   font-size: 15px;
   font-weight: bold;
-  color: dimgrey;
+  color: yellowgreen;
   font-family: 'Quicksand', sans-serif;
+  display: block;
+  margin: 50px auto;
+  border-radius: 25px;
   
 }
 
 header button:hover {
-  background-color: dimgrey;
   color: yellowgreen;
+  border-radius: 25px;
+  background-color: transparent;
+  border: 1px solid yellowgreen;
   text-decoration: underline;
-  text-shadow: 1px 1px 10px black;
-  box-shadow: 1px 1px 10px black;
+ 
 }
 
-/*--PHOTO--*/
-.photo img {
-  width: 300px;
-  transform: rotate(270deg);
-  align-content: center;
+/*-----INFO AND TABLE*/
+.info {
+   justify-items: center;
+   align-items: center;
 }
+
+.info-description {
+  font-size: 30px;
+  float: left;
+  width: 50%;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.info table {
+  width: 450px;
+  height: 300px;
+  background-color: white;
+  text-align: center;
+  box-shadow: 0px 0px 5px dimgrey;
+  float: right;
+  margin: 20px 150px 50px auto;
+  
+}
+
+table, td {
+  border: 1px solid dimgrey;
+  border-collapse: collapse;
+}
+
+table + td {
+  background-color: dimgrey;
+}
+
+th {
+  color: yellowgreen;
+  background-color: dimgrey;
+  font-size: 20px;
+}
+
+tr:nth-child(odd) {
+  background-color: #EFEFEF;
+}
+
+/*----MENU--*/
+
+.menu {
+    clear: both;
+    background-image: url("https://images.unsplash.com/photo-1514115765483-c3ca04662d22?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80");
+    width: 100%;
+    background-size: cover;
+    background-position: 50% 70%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    text-align: center;
+}
+
+.menu h2 {
+      color: mintcream;
+      font-family: Caveat,sans-serif;
+      font-size:70px;
+      margin: 10px;
+    }
+
+.menu-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    justify-content: space-around;
+    width: 900px;
+    height: 600px;
+    margin: 20px auto;
+    padding-bottom: 30px;
+    border-color: black;
+    color: white;
+    gap: 10px;
+}
+
+.menu-item {
+  box-sizing: border-box;
+  padding: 10px;
+  background-color: rgba(154, 205, 50, 0.7);
+  border: 1px solid dimgrey;
+  width: 560px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center
+}
+
+.menu-container img {
+  width: 200px;
+  height: 150px;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+
+.menu-item-text {
+  padding-left: 5px;
+}
+
 
 /*--FOOTER--*/
 footer li a {
@@ -113,6 +216,7 @@ footer {
   height: 100px;
   position: relative;
   bottom: 0px;
+  clear:both;
 }
 
 footer li{
