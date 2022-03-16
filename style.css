@@ -7,12 +7,13 @@ body {
   color: dimgrey;
   margin: 0 0;
   font-family: 'Quicksand', sans-serif;
-  
+  width: 100%;
+  height: 100%;
 }
 
 .container {
   margin: 0px;
-  
+  height: 100%;
 }
 
 /*--NAVIGATION BAR--*/
@@ -99,7 +100,7 @@ header button:hover {
   background-color: transparent;
   border: 1px solid yellowgreen;
   text-decoration: underline;
-  transform: scale(1.2, 1.2);
+  transform: scale(1.1, 1.1);
 }
 
 /*-----INFO AND TABLE*/
@@ -112,7 +113,9 @@ header button:hover {
 }
 
 #info-heading {
-  font-weight: bold;
+  font-weight: 1000;
+  font-size: 2.5rem;
+  color: yellowgreen;
 }
 
 .info-description {
@@ -181,7 +184,7 @@ tr:nth-child(odd) {
     justify-content: space-around;
     width: 900px;
     height: 600px;
-    margin: 20px auto;
+    margin: 20px auto 0px auto;
     padding-bottom: 30px;
     border-color: black;
     color: white;
@@ -220,8 +223,62 @@ tr:nth-child(odd) {
   margin-bottom: 0px;
 }
 
-#donuts {
-  align-self: center;
+/*--GRID--*/
+.grid {
+  height: 800px;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 25px;
+  /*justify-content: center;
+  align-items: center;
+  margin-top: 2%;*/
+}
+
+.amenities-list {
+  width: 50%;
+}
+
+.amenities-list h2 {
+  margin-top: 0px;
+}
+
+/*.amenities-image {
+  background-image: url("https://images.unsplash.com/photo-1462917882517-e150004895fa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+  width: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}*/
+
+.grid-image {
+  background-image: url("https://images.unsplash.com/photo-1620146344904-097a0002d797?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+}
+  
+.grid-image-two, .grid-image {
+  width: 50%;
+  height: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.grid-image-two {
+  background-image: url("https://images.unsplash.com/photo-1467189386127-c4e5e31ee213?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+}
+
+/*SUBSCRIPTION*/
+.subscription {
+  width: 50%;
+  font-size: 20px;
+}
+
+.selections {
+  margin-top: 1rem;
+   margin-bottom: 1rem;
+}
+input[type=email] {
+  border: 0;
+  border-bottom:2px solid black; 
 }
 
 /*--FOOTER--*/
