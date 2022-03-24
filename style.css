@@ -95,12 +95,10 @@ header button {
 }
 
 header button:hover {
-  color: yellowgreen;
   border-radius: 25px;
-  background-color: transparent;
   border: 1px solid yellowgreen;
-  text-decoration: underline;
   transform: scale(1.1, 1.1);
+  text-shadow: 2px 2px 10px black;
 }
 
 /*-----INFO AND TABLE*/
@@ -201,6 +199,7 @@ tr:nth-child(odd) {
   flex-direction: row-reverse;
   justify-content: space-between;
   align-items: center;
+  box-shadow: 2px 2px 10px black;
 }
 
 .menu-container img {
@@ -230,16 +229,29 @@ tr:nth-child(odd) {
   flex-wrap: wrap;
   font-size: 25px;
   /*justify-content: center;
-  align-items: center;
-  margin-top: 2%;*/
+  align-items: center;*/
+  margin: 5% 2%;
 }
 
 .amenities-list {
   width: 50%;
 }
 
-.amenities-list h2 {
-  margin-top: 0px;
+.amenities-list a {
+  color: yellowgreen;
+  font-size: 20px;
+}
+
+.amenities-list a:hover {
+  color: #749A26;
+}
+
+.grid h2 {
+  margin: 1rem 0;
+  text-align: center;
+  font-family: Caveat,sans-serif;
+  font-size: 70px;
+  color: yellowgreen;
 }
 
 /*.amenities-image {
@@ -267,18 +279,27 @@ tr:nth-child(odd) {
 }
 
 /*SUBSCRIPTION*/
-.subscription {
+.catering {
   width: 50%;
-  font-size: 20px;
+  text-align: center;
+}
+.catering p {
+  padding: 0 2rem;
 }
 
-.selections {
-  margin-top: 1rem;
-   margin-bottom: 1rem;
+.catering button {
+  display: block;
+  margin: 0 auto;
+  width: 10rem;
+  height: 3rem;
+  background-color: yellowgreen;
+  border: none;
+  color: mintcream;
+  font-size: 15px;
 }
-input[type=email] {
-  border: 0;
-  border-bottom:2px solid black; 
+
+.catering button:hover {
+  background-color: #749A26;
 }
 
 /*--FOOTER--*/
@@ -288,18 +309,72 @@ footer li a {
 }
 
 footer {
-  text-align: center;
   background-color: dimgrey;
   color: white;
   width: 100%;
-  height: 100px;
-  position: relative;
-  bottom: 0px;
+  height: auto;
+  position: absolute;
   clear:both;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-wrapper {
+  margin: 0 auto;
+}
+
+footer label {
+   display: block; /*so that the button and email input box can be inline */
+}
+
+footer [type=email] {
+  font-family: 'Quicksand', sans-serif;
+  display: inline-block;
+  margin: 0 auto;
+  margin-top: 10px;
+  color: yellowgreen;
+  width: 300px;
+  height: 32px;
+}
+
+footer [type=email]::placeholder {
+  color: yellowgreen;
+}
+
+footer [type=email]:focus {
+  outline: 2px solid yellowgreen;
+  border: none;
+}
+
+footer button {
+  background-color: yellowgreen;
+  font-family: 'Quicksand', sans-serif;
+  height: 31.9px;
+  color: mintcream;
+  border: none;
+  position: relative;
+  right: 60px;
+  display: inline;
+}
+
+footer button:hover {
+  background-color: #749A26;
+} 
+
+footer .sub {
+  padding-top: 20px;
 }
 
 footer li{
   list-style: none;
+}
+
+footer ul {
+  margin-top: 10px;
+  padding-left: 0;
 }
 
 footer li:first-child {
