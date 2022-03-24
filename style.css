@@ -381,3 +381,6 @@ footer ul {
 footer li:first-child {
   margin-bottom: 5px;
 }
+footer a:hover {
+  text-shadow: 2px 2px 5px black;
+}
