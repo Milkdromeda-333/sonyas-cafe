@@ -1,383 +1,262 @@
-* {
-  box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sonya's Cafe</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" >
+  <link href="style.css" rel="stylesheet">
+  <!--Quicksand Font-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+<!--Caveat Font-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="header-nav">
+    <nav>
+      <ul>
+        <li>
+          <a href="#">Order Ahead</a>
+          </li>
+        <li>
+          <a href="#">Gallery</a>
+          </li>
+        <li>
+          <a href="#">Menu</a>
 
-body {
-  background-color: mintcream;
-  color: dimgrey;
-  margin: 0 0;
-  font-family: 'Quicksand', sans-serif;
-  width: 100%;
-  height: 100%;
-}
+          </li>
+        <li>
+          <a href="#">Contact Us</a>
+          </li>
+        <li>
+          <a href="#">Location</a>
+          </li>
+      </ul>
+    </nav>
+  </section>
+  <header class="header">
+    <h1>Sonya's Cafe</h1>
+      <button>Order Ahead Here</button>
+    </header>
+  <div  class="container">
+  <div class="info">
+    <div class="info-description">
+    <p id="info-heading"> Visit us today at Sonya's cafe!</p>
+    <p>We have fresh bagels, home-made cream cheese of a variety of flavors, moist muffins, aromatic cookies, flaky scones, strong coffee, rich tea, soft and shiny donuts, 100% recycled napkins and straws, and much more just come on down!</p>
+    </div>
+    <div class="info-table">
+      <table>
+  <thead>
+    <th>Days</th>
+    <th>Hours</th>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Monday</td>
+      <td>6am-8pm</td>
+    </tr>
+    <tr>
+      <td>Tuesday</td>
+      <td>6am-8pm</td>
+    </tr>
+    <tr>
+      <td>Wednesday</td>
+      <td>6am-8pm</td>
+    </tr>
+    <tr>
+      <td>Thursday</td>
+      <td>6am-8pm</td>
+    </tr>
+    <tr>
+      <td>Friday</td>
+      <td>6am-8pm</td>
+    </tr>
+    <tr>
+      <td>Saturday</td>
+      <td>6am-1pm</td>
+    </tr>
+    <tr>
+      <td>Sunday</td>
+      <td>6am-1pm</td>
+      </tr>
+  </tbody>
+</table>
+    </div>
+  </div>
 
-.container {
-  margin: 0px;
-  height: 100%;
-}
+<!--MENU SECTION--?-->
+    <section class="menu">
+      <h2>Menu</h2>
+        <div class="menu-container">
+          <div class="menu-item">
+            <div class="menu-item-text">
+              <div class="menu-item-header">
+              <p>Bagels</p>
+              </div>
+              <div class="menu-item-description">
+              <p>Fresh baked daily. Comes with regular cream cheese. $1 extra for a specialty cream cheese.</p>
+            </div>
+          </div>
+          <div class="menu-image">
+            <img src="https://images.unsplash.com/photo-1585445490387-f47934b73b54?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="Bagels">
+          </div>
+        </div>
+          <div class="menu-item">
+            <div class="menu-item-text">
+              <div class="menu-item-header">
+                <p>Muffins</p>
+              </div>
+              <div class="menu-item-description">
+            <p>Fresh baked daily. Comes in Banana-Nut, Blueberry, Strawberry, and Milk Chocolate.</p>
+            </div>
+          </div>
+          <div class="menu-image>">
+            <img src="https://images.unsplash.com/photo-1637087788449-222cf1da072a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="Muffins">
+          </div>
+        </div>
+          <div class="menu-item">
+            <div class="menu-item-text">
+              <div class="menu-item-header">
+                <p>Scones</p>
+              </div>
+              <div class="menu-item-description">
+                <p>Fresh baked daily. Gluten-free options available. We have Lemon-poppy seed, Key Lime, and our most popular Cinnamon Coffee!* </p>
+             </div>
+            </div>
+            <div class="menu-image">
+              <img src="https://images.unsplash.com/photo-1589114471223-dec0d8d572c6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="Scones">
+            </div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-text">
+              <div class="menu-item-header">
+                <p>Cookies</p>
+              </div>
+              <div class="menu-item-description">
+                <p>Baked fresh daily. Comes in Chocolate chip, Red Velvet, Oatmeal-Walnut-Rasberry, and strawberry cheesecake.</p>
+              </div> 
+          </div>
+          <div class="menu-image">
+                <img src="https://images.unsplash.com/photo-1628559087259-8a472928f47a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1350&q=80" alt="Cookies">
+              </div>
+        </div>
+        <div class="menu-item" id="donuts">
+          <div class="menu-item-text">
+            <div class="menu-item-header">
+              <p>Classic Donuts</p>
+            </div>
+            <div class="menu-item-description donuts">
+              <p id="donuts">Baked fresh every 12 hours. Classically glazed.</p>
+            </div>
+          </div>
+          <div class="menu-image">
+            <img src="https://images.unsplash.com/photo-1603275216927-982d7e44be35?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="Donuts">
+          </div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-text">
+            <div class="menu-item-header">
+              <p>Fresh Fruits</p>
+            </div>
+            <div class="menu-item-description">
+              <p>Fruits from our local farmers. Thanks Farmer Dan, Phyllis, John, and Lewis!</p>
+            </div>
+          </div>
+          <div class="menu-image">
+            <img src="https://images.unsplash.com/photo-1556048029-9c5edf1aa695?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="Fruits">
+          </div>
+        </div>
+      </section>
+      <!----GRIDZ-->
 
-/*--NAVIGATION BAR--*/
-nav {
-  position: absolute;
-  top: 0px;
-  height: 40px;
-  width: 100%;
-  z-index: 2;
-  background-color: dimgrey; 
-  display: inline-block;
-  text-align: center;
-}
+      <!-- GRID 1 -->
+      <section class="grid-1">
+        <div class="amenities-list">
+          <h2>Amenities</h2>
+          <ul>
+            <li>Clean public restrooms</li>
+            <li>Free Wifi</li>
+            <li>Free ear-plugs provided</li>
+            <li>Pay for an unsheltered persons meal! <a href="#">More info here.</a></li>
+          </ul>
+        </div>
+        <div class="grid-image-one">
+          <img src="https://images.unsplash.com/photo-1620146344904-097a0002d797?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="Golden brown croissonts">
+        </div>
+      <!--ROW 2 SUBSCRIPTION-->
+      <div class="grid-image-two">
+        <img src="https://images.unsplash.com/photo-1467189386127-c4e5e31ee213?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="Coffee with lime sitting nearby">
+      </div>
+      <!--CATERING-->
+      <div class="catering">
+  <h2>We Cater!</h2>
+  <p>Have our delicious food at your event by putting in an order at least two weeks ahead. Make sure people remember how good the food was at your event!</p>
+  <button>Catering Form</button>
+</div>
+      </section>
+<!-- END GRID 1 -->
 
-nav li {
-
-  padding-right: 20px;
-  height: 30px;
-  display: inline-block;
-  
-}
-
-nav a {
-  text-decoration: none;
-  font-size: 25px;
-  color: yellowgreen;
-  
-}
-
-nav a:hover {
-  color: dimgrey;
-  text-decoration: underline;
-  text-shadow: 1px 1px 10px black;
-  color: yellowgreen;
-  border-right-style: solid 1px yellowgreen;
-}
-nav ul {
-  margin: 0;
-}
-/*----HEADER--*/
-
-.header {
-  background-image: url("https://images.unsplash.com/photo-1600093463592-8e36ae95ef56?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80");
-  background-color: black;
-  background-position: center;
-  background-attachment: fixed;
-  width: 100%;
-  height: 550px;
-  color: mintcream;
-  font-size: 6em;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
- align-content: space-between;
- row-gap: 1em;
-}
-
-header h1 {
-  text-shadow: 1px 1px 10px black;
-  font-family: 'Caveat', cursive;
-  color: hsl(150, 100%, 95%);
-  margin: 0px;
-}
-
-header button {
-  text-align: center;
-  background-color: rgba(105, 105, 105, 0.9);
-  width: 250px;
-  height: 80px;
-  border: none;
-  font-size: 15px;
-  font-weight: bold;
-  color: yellowgreen;
-  font-family: 'Quicksand', sans-serif;
-  border-radius: 25px;
-  transition: transform .1s; 
-}
-
-header button:hover {
-  border-radius: 25px;
-  border: 1px solid yellowgreen;
-  transform: scale(1.1, 1.1);
-  text-shadow: 2px 2px 10px black;
-}
-
-/*-----INFO AND TABLE*/
-.info {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
-  height: 450px;
-}
-
-#info-heading {
-  font-weight: 1000;
-  font-size: 2.5rem;
-  color: yellowgreen;
-}
-
-.info-description {
-  font-size: 30px;
-  float: left;
-  width: 50%;
-  padding: 0 20px;
-  text-align: center;
+<!-- GRID2 FOR NARROW SCREENS-->
+<section class="grid-2">
+  <div class="amenities-list">
+    <h2>Amenities</h2>
+    <ul>
+      <li>Clean public restrooms</li>
+      <li>Free Wifi</li>
+      <li>Free ear-plugs provided</li>
+      <li>Pay for an unsheltered persons meal! <a href="#">More info here.</a></li>
+    </ul>
+  </div>
+  <div class="grid-image-one">
+    <img src="https://images.unsplash.com/photo-1620146344904-097a0002d797?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="Golden brown croissonts">
+  </div>
+  <!--CATERING-->
+<div class="catering">
+<h2>We Cater!</h2>
+<p>Have our delicious food at your event by putting in an order at least two weeks ahead. Make sure people remember how good the food was at your event!</p>
+<button>Catering Form</button>
+</div>
+<!--ROW 2 SUBSCRIPTION-->
+<div class="grid-image-two">
+  <img src="https://images.unsplash.com/photo-1467189386127-c4e5e31ee213?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="Coffee with lime sitting nearby">
+</div>
+</section>
+</div>
+<!-- END GRID 2 -->
  
-}
-
-.info table {
-  width: 450px;
-  height: 300px;
-  background-color: white;
-  text-align: center;
-  box-shadow: 0px 0px 5px dimgrey;
-  float: right;
- /* margin: 20px 150px 50px auto;*/
-  
-}
-
-table, td {
-  border: 1px solid dimgrey;
-  border-collapse: collapse;
-}
-
-table + td {
-  background-color: dimgrey;
-}
-
-th {
-  color: yellowgreen;
-  background-color: dimgrey;
-  font-size: 20px;
-}
-
-tr:nth-child(odd) {
-  background-color: #EFEFEF;
-}
-
-/*----MENU--*/
-
-.menu {
-    clear: both;
-    background-image: url("https://images.unsplash.com/photo-1514115765483-c3ca04662d22?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80");
-    width: 100%;
-    background-size: cover;
-    background-position: 50% 70%;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    text-align: center;
-}
-
-.menu h2 {
-      color: mintcream;
-      font-family: Caveat,sans-serif;
-      font-size:70px;
-      margin: 10px;
-    }
-
-.menu-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    justify-content: space-around;
-    width: 900px;
-    height: 600px;
-    margin: 20px auto 0px auto;
-    padding-bottom: 30px;
-    border-color: black;
-    color: white;
-    gap: 10px;
-}
-
-.menu-item {
-  box-sizing: border-box;
-  padding: 10px;
-  background-color: rgba(154, 205, 50, 0.7);
-  border: 1px solid dimgrey;
-  width: 670px;
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: space-between;
-  align-items: center;
-  box-shadow: 2px 2px 10px black;
-}
-
-.menu-container img {
-  width: 200px;
-  height: 150px;
-  flex-shrink: 0;
-  object-fit: cover;
-}
-
-.menu-item-text {
-  padding-left: 5px;
-  font-size: 18px;
-  line-height: 23px;
-}
-
-.menu-item-header p{
-  font-family: Caveat, sans-serif;
-  font-size: 25px;
-  margin-top: 0px;
-  margin-bottom: 0px;
-}
-
-/*--GRID--*/
-.grid {
-  height: 800px;
-  display: flex;
-  flex-wrap: wrap;
-  font-size: 25px;
-  /*justify-content: center;
-  align-items: center;*/
-  margin: 5% 2%;
-}
-
-.amenities-list {
-  width: 50%;
-}
-
-.amenities-list a {
-  color: yellowgreen;
-  font-size: 20px;
-}
-
-.amenities-list a:hover {
-  color: #749A26;
-}
-
-.grid h2 {
-  margin: 1rem 0;
-  text-align: center;
-  font-family: Caveat,sans-serif;
-  font-size: 70px;
-  color: yellowgreen;
-}
-
-/*.amenities-image {
-  background-image: url("https://images.unsplash.com/photo-1462917882517-e150004895fa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
-  width: 50%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}*/
-
-.grid-image {
-  background-image: url("https://images.unsplash.com/photo-1620146344904-097a0002d797?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
-}
-  
-.grid-image-two, .grid-image {
-  width: 50%;
-  height: 50%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.grid-image-two {
-  background-image: url("https://images.unsplash.com/photo-1467189386127-c4e5e31ee213?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
-}
-
-/*SUBSCRIPTION*/
-.catering {
-  width: 50%;
-  text-align: center;
-}
-.catering p {
-  padding: 0 2rem;
-}
-
-.catering button {
-  display: block;
-  margin: 0 auto;
-  width: 10rem;
-  height: 3rem;
-  background-color: yellowgreen;
-  border: none;
-  color: mintcream;
-  font-size: 15px;
-}
-
-.catering button:hover {
-  background-color: #749A26;
-}
-
-/*--FOOTER--*/
-footer li a {
-  text-decoration: none;
-  color: yellowgreen;
-}
-
-footer {
-  background-color: dimgrey;
-  color: white;
-  width: 100%;
-  height: 200px;
-  position: absolute;
-  clear:both;
-  font-size: 20px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 50px;
-}
-
-/* .footer-wrapper {
-  margin: 0 auto;
-} */
-
-footer label {
-   display: block; /*so that the button and email input box can be inline */
-}
-
-footer [type=email] {
-  font-family: 'Quicksand', sans-serif;
-  display: inline-block;
-  margin: 0 auto;
-  margin-top: 10px;
-  color: yellowgreen;
-  width: 300px;
-  height: 32px;
-}
-
-footer [type=email]::placeholder {
-  color: yellowgreen;
-}
-
-footer [type=email]:focus {
-  outline: 2px solid yellowgreen;
-  border: none;
-}
-
-footer button {
-  background-color: yellowgreen;
-  font-family: 'Quicksand', sans-serif;
-  height: 31.9px;
-  color: mintcream;
-  border: none;
-  position: relative;
-  right: 60px;
-  display: inline;
-}
-
-footer button:hover {
-  background-color: #749A26;
-} 
-
-footer .sub {
-  padding-top: 20px;
-}
-
-footer li{
-  list-style: none;
-}
-
-footer ul {
-  margin-top: 10px;
-  padding-left: 0;
-}
-
-footer li:first-child {
-  margin-bottom: 5px;
-}
+  <footer class="footer">
+      <div class="sub">
+        <label for="email">Subscribe for discounts, offers, and updates.</label>
+       <input type="email" id="email" name="email" placeholder="yourname@mail.com">
+          <button>Submit</button>
+         </div>
+      <div class="list">
+          <ul>
+          <li>Contact us at <a href="tel:0005555555">000-555-5555</a></li>
+          <li>Email at <a href="mailto:sonya@company.com">Sonya@company.com</a></li>
+        </ul>
+    </div>
+    <div class="footer-nav">
+        <ul>
+          <li>
+            <a href="#">Order Ahead</a>
+            </li>
+          <li>
+            <a href="#">Gallery</a>
+            </li>
+          <li>
+            <a href="#">Menu</a>
+            </li>
+          <li>
+            <a href="#">Contact Us</a>
+            </li>
+          <li>
+            <a href="#">Location</a>
+            </li>
+        </ul>
+    </div>
+    </footer>
+</body>
+</html>
