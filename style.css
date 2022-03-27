@@ -397,9 +397,19 @@ footer a:hover {
     grid-template-columns: 1fr;
     grid-auto-flow: row;
     align-content: stretch;
-    overflow: scroll;
+    height: auto;
+
+  }
+
+  .menu {
+    background-position: center;
+  }
+
+  .menu h2 {
+    color: yellowgreen;
   }
 }
+
 
 @media only screen and (max-width: 943px) {
   .info {
@@ -478,6 +488,14 @@ footer a:hover {
     margin-top: 1rem;
   }
 
+  footer [type=email] {
+    width: 50%;
+  }
+
+  footer button {
+    width: 60px;
+  }
+
   .footer-nav {
     display: block;
     font-size: inherit;
@@ -489,10 +507,16 @@ footer a:hover {
   }
   
   th {
-    font-size: 10px;
+    font-size: 1rem;
   }
 
   td {
     padding: 10px;
   }
-}
+
+  .menu {
+    
+    background-attachment: local;
+    height: auto;
+  }
+  }
