@@ -77,8 +77,8 @@ nav ul {
   flex-direction: column;
   justify-content: center;
   align-items: center;
- align-content: space-between;
- row-gap: 1em;
+  align-content: space-between;
+  row-gap: 1em;
 }
 
 header h1 {
@@ -462,13 +462,23 @@ footer a:hover {
 
 @media only screen and (max-width: 700px) {
   header h1 {
-    font-size: 100%;
+    margin: 1rem .5rem 1rem;
+    font-size: 5rem;
+
   }
 
-  header {
-    height: 90vh;
+  .header {
+    height: 16.5rem;
+    row-gap: unset;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
   }
 
+  header button {
+    height: 4rem;
+  }
+
+  
   .header-nav {
     display: none;
   }
@@ -477,11 +487,43 @@ footer a:hover {
     display: block;
   }
 
+  .menu-item {
+    flex-direction: row-reverse;
+    width: 98%;
+    height: 14rem;
+    box-shadow: none;
+    background-color: unset;
+    text-shadow: none;
+    box-shadow: none;
+    color: black;
+    border-color: rgba(154, 205, 50, .7);
+  }
+
+  .menu-item-header {
+    color: yellowgreen;
+  }
+
+  .menu-item img {
+    width: 120px;
+    height: auto;
+  }
+
+  .menu h2 {
+    text-shadow: none;
+    margin: 5rem 0rem 0rem;
+  }
+
+  .menu-item-text {
+    padding-left: 10px;
+    line-height: unset;
+  }
+
   footer {
     display: block;
     height: auto;
     position: absolute;
-    bottom: -400px;
+    bottom: -435px;
+    padding: 2rem;
   }
 
   footer label {
@@ -516,7 +558,6 @@ footer a:hover {
 
   .menu {
     
-    background-attachment: local;
-    height: auto;
+    background: none;
   }
   }
